@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XP 2 Drive Thru Car Wash</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* CSS untuk menyesuaikan video */
+      .hero {
+        position: relative;
+        overflow: hidden;
+        height: 100vh; /* Mengatur tinggi hero section */
+      }
+
+      #myVideo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+      }
+
+      /* Tambahan styling untuk konten */
+      .content {
+        position: relative;
+        z-index: 1; /* Pastikan konten berada di atas video */
+        color: white; /* Warna teks putih untuk kontras */
+        text-align: center; /* Pusatkan teks */
+        padding: 20px; /* Tambahkan padding */
+      }
+
+      /* Animasi fade-in */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Styling untuk navbar dan bagian lainnya */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.7); /* Latar belakang navbar transparan */
+        color: white;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+      }
+
+      /* Styling untuk logo di navbar */
+      .navbar-logo {
+        display: flex; /* Menggunakan flexbox untuk menyusun logo dan teks dalam satu baris */
+        align-items: center; /* Pusatkan logo dan teks secara vertikal */
+        color: white; /* Warna teks */
+      }
+
+      .navbar-logo-img {
+        height: 50px; /* Atur tinggi logo sesuai kebutuhan */
+        margin-right: 10px; /* Jarak antara logo dan teks */
+      }
+
+      /* Styling untuk bagian lainnya */
+      section {
+        padding: 60px 20px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      }
+
+      /* Styling untuk fasilitas */
+      .facility-box {
+        background-color: rgba(255, 255, 255, 0.1); /* Warna kotak */
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Border kotak */
+        border-radius: 8px; /* Sudut kotak melengkung */
+        padding: 20px; /* Padding di dalam kotak */
+        margin: 10px 0; /* Margin antara kotak */
+        text-align: left; /* Rata kiri untuk teks */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navbar Start-->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="img/Logo 1.png" alt="Logo" class="navbar-logo-img" />
+        XP2<span>Drive Thru Car Wash</span>
+      </a>
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#fasilitas">Facility</a>
+        <a href="#ulasan">Review</a>
+        <a href="#information">Information</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!--Navbar End-->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <video autoplay muted loop id="myVideo">
+        <source src="img/XP2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <main class="content fade-in">
+        <h1>XP2 Car Wash</h1>
+        <p>Cuci mobil dengan cepat, mudah, dan harga yang terjangkau</p>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+<!-- About Section start -->
+<section id="about" class="about">
+  <div class="about-background">
+      <h2 class="fade-in">About Us</h2>
+      <div class="row">
+          <div class="about-img fade-in">
+              <img src="img/Car Wash.png" alt="About Us" />
+          </div>
+          <div class="content fade-in">
+              <div class="black-box">
+                  <p>
+                      Car Wash XP 2 merupakan bagian dari jaringan layanan cuci mobil profesional yang berdiri sejak tahun 2007. Dengan pengalaman lebih dari satu dekade, kami terus berinovasi dalam memberikan layanan terbaik untuk menjaga kebersihan kendaraan pelanggan kami.
+                      Cabang terbaru kami dibuka pada 23 November 2023, menghadirkan standar kebersihan kendaraan yang lebih modern dan efisien. Dengan teknologi cuci terkini, serta tim yang berpengalaman, kami berkomitmen untuk memberikan pelayanan terbaik yang cepat, berkualitas, dan terjangkau.
+                      Kepercayaan pelanggan adalah prioritas utama kami, dan kami selalu berusaha memberikan hasil yang maksimal dengan layanan yang ramah serta profesional. Kunjungi Car Wash XP 2 untuk pengalaman mencuci kendaraan yang berbeda!
+                  </p>
+              </div>
+              <a href="#information" class="cta-box">More Information</a>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- About Section end -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+</head>
+<body class="bg-gray-100">
+
+<!-- Facilities Section -->
+<section id="gallery" class="gallery">
+  <div class="row">
+    <img src="img/faci.png"; alt="Img 1" class="gallery-card-img" />
+  </div>
+</div>
+</section>
+<!-- Facilities Section end -->
+
+
+
+
+
+<!-- Price List Section -->
+<section class="bg-black-200 py-12">
+  <div class="about-background text-center">
+    <h2 class="text-3xl font-bold mb-8 text-black">Price List</h2> <!-- Heading centered and text colored black -->
+    <div class="row">
+      <img src="img/add1.png" alt="Price List" class="navbar-price-list-img mx-auto mb-8" style="max-width: 80%; height: auto;" /> <!-- Mengatur ukuran gambar -->
+    </div>
+  </div>
+</section>
+<!-- Price List Section end -->
+
+    <!-- Ulasan Section start -->
+    <section id="ulasan" class="ulasan">
+      <h2 class="fade-in">Our Review</h2>
+      <div class="row">
+        <div class="ulasan-card fade-in">
+          <img src="img/review 1.png" alt="Review 1" class="review-card-img" />
+        </div>
+        <div class="ulasan-card fade-in">
+          <img src="img/review 2.png" alt="Review 2" class="review-card-img" />
+        </div>
+        <div class="ulasan-card fade-in">
+          <img src="img/review 3.png" alt="Review 3" class="review-card-img" />
+        </div>
+      </div>
+    </section>
+    <!-- Ulasan Section end -->
+
+   <!-- Gallery Section start -->
+   <section id="gallery" class="gallery">
+      <h2 class="fade-in">Our Gallery</h2>
+      <div class="row">
+        <img src="img/CarWash1.png"; alt="Img 1" class="img-card-img" />
+      </div>
+    </div>
+   </section>
+   <!-- Galley Section end -->
+
+    <!-- Information Section start -->
+    <section id="information" class="information">
+      <h2 class="fade-in">More Information</h2>
+      <div class="info-content">
+        <div class="info-item left fade-in">
+          <h3>Location</h3>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.080170022626!2d110.77153207357638!3d-7.566238474724208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a15fda3ad1337%3A0xb3a9e23a1e8dc69b!2sXP2%20drive%20thru%20carwash!5e0!3m2!1sid!2sid!4v1738735232546!5m2!1sid!2sid"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="info-item right fade-in">
+          <h3>Office Hours</h3>
+          <p>Senin - Minggu: 07:00 a.m. - 07:00 p.m.</p>
+          <h3>Contact Person</h3>
+          <p>
+            Telepon:
+            <a
+              href="https://wa.me/6281128506777"
+              target="_blank"
+              class="red-text"
+              >+62 811-2850-6777</a
+            >
+          </p>
+
+          <h3>Instagram</h3>
+          <p>
+            Follow us on Instagram:
+            <a
+              href="https://www.instagram.com/xp2.carwash?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              class="red-text"
+              >@xp2.carwash</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Information Section end -->
+
+
+    <!-- Footer Section start -->
+    <footer>
+      <div class="links">
+        <a href="home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#fasilitas">Facility</a>
+        <a href="#ulasan">Review</a>
+        <a href="#information">More Information</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="">Group 3</a>. | &copy; 2025.</p>
+      </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript-->
+    <script src="js/script.js"></script>
+
+    <!-- Animasi fade-in -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const fadeElements = document.querySelectorAll('.fade-in');
+        fadeElements.forEach((el) => {
+          el.classList.add('visible');
+        });
+      });
+    </script>
+  </body>
+</html>
